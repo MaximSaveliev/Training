@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline Elements Example - Airport</title>
+  <style>
+    p{
+      padding:          10px;
+      background-color: lightblue;
+      font-size:        40px;
+      color:            white;
+      border-radius: 20px;
+    }
+    #firs-line{
+      text-align: right;
+    }
+    #second-line{
+      text-align: center;
+    }
+    body>#firs-line>:nth-child(2){
+      margin-left: 50px;
+    }
+    body>#second-line>:nth-child(1){
+      margin-left: 100px;
+    }
+    body>#second-line>:nth-child(3):hover{
+      font-size: 200%;
+      color: greenyellow;
+    }
+    body>#second-line>:nth-child(5){
+      margin-right: 100px;
+    }
+    body>#thid-line>:first-child{
+      margin-right: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="firs-line">
+    <span>&#9992;</span>
+    <span>&#9992;</span>
+  </p>
+  <p id="second-line">
+    <span>&#9992;</span><br>
+    <span>&#9992;</span><br>
+    <span>&#9992;</span>
+  </p>
+  <p id="thid-line">
+    <span>&#9992;</span>
+    <span>&#9992;</span>
+  </p>
+
+
+</body>
+</html>

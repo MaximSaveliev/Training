@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Block Model Example - City</title>
+  <style>
+    #square{
+      width: 600px;
+      height: 600px;
+      border: 10px solid #999;
+      padding: 10px;
+    }
+    #park{
+      width: 400px;
+      height: 400px;
+      background-color: lightgreen;
+      float: left;
+      border-bottom: 10px solid green;
+      border-right: 10px solid green;
+      /* ??? */
+    }
+    #building-1{
+      width: 180px;
+      height: 400px;
+      background-color: lightblue;
+      float: left;
+      border-bottom: 10px solid green;
+      border-left: 10px solid green;
+      /* ??? */
+    }
+    #building-2{
+      width: 400px;
+      height: 180px;
+      background-color: lightblue;
+      float: left;
+      border-top: 10px solid green;
+      border-right: 10px solid green;
+      /* ??? */
+    }
+    #market{
+      background-color: lightgrey;
+      width: 180px;
+      height: 180px;
+      float: left;
+      border-top: 10px solid green;
+      border-left: 10px solid green;
+      /*  ???  */
+    }
+    #market .monument{
+      font-size: 50px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 180px;
+      transition: 2s;
+      /* ??? */
+    }
+    #market .monument:hover{
+        transform: rotate(360deg);
+        font-size: 70px;
+        color: rgb(21, 111, 146);
+        cursor: pointer;
+    }
+    #park .tree{
+      font-size: 50px;
+      color: green;
+      float:left;
+      margin-left: 35px;
+      margin-right: 35px;
+      margin-top: 66px;
+      margin-bottom: 66px;
+      /* ??? */
+    }
+    #park .tree:hover:before{
+        position: absolute;
+        content:"\1F333";
+        margin-left: -20px;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="square">
+
+    <div id="park">
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+    </div>
+    <div id="building-1"></div>
+    <div id="building-2"></div>
+    <div id="market">
+      <div class="monument">
+        &#9816;
+      </div>
+    </div>
+
+  </section>
+
+
+</body>
+</html>
